@@ -1,10 +1,55 @@
+body{
+  background-color: antiquewhite;
+}
 .App {
   text-align: center;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #052363;
+  border: 4px solid red;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  color: #fff;
+}
+.Todo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+ 
+
+}
+
+.pen{
+  padding: .1em .2em;
+  color: #fff;
+}
+.completed {
+  text-decoration: line-through;
+}
+
+.trash{
+  padding: .1em .2em;
+  color: #fff;
+ 
+}
+button{
+  background-color: #1658e7;
+  color: #fff;
+  padding: .5em 1em;
+  border-color: #1658e7;
+}
+input{
+  padding: .5em 0;
+  outline: none;
+}
+::placeholder{
+  padding: 0 .5em;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -12,16 +57,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+form{
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.TodoWrapper {
+  padding: 2em 2em 5em 2em ;
+ 
 }
 
 .App-link {
